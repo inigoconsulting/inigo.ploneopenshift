@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '0.1'
 
 long_description = (
-    open('README.txt').read()
+    open('README.rst').read()
     + '\n' +
     'Contributors\n'
     '============\n'
@@ -23,11 +23,11 @@ setup(name='inigo.ploneopenshift',
       classifiers=[
         "Programming Language :: Python",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
-      license='gpl',
+      keywords='plone openshift wsgi',
+      author='Izhar Firdaus',
+      author_email='izhar@inigo-tech.com',
+      url='https://github.com/inigoconsulting/inigo.ploneopenshift',
+      license='MIT',
       packages=find_packages(),
       namespace_packages=['inigo'],
       include_package_data=True,

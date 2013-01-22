@@ -34,9 +34,12 @@ setup(name='inigo.ploneopenshift',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Zope2'
           # -*- Extra requirements: -*-
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
-      )
+      entry_points={
+        'paste.app_factory': [
+            'main=inigo.ploneopenshift.wsgi:app_factory',
+        ]
+      }
+)
